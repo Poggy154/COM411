@@ -1,0 +1,3 @@
+import bmi
+
+bmi.run()
