@@ -42,7 +42,7 @@ elif music == "pop":
         print("oooo how fun")
     elif (pop == "singing") and (style == "fast"):
         print("Ahh a mixture, how original")
-    elif (rock == "rap") and (style == "slow"):
+    elif (pop == "rap") and (style == "slow"):
         print("Nice style")
     else:
         print("I do not know that style")
