@@ -1,7 +1,10 @@
 print("How many cables should I remove?")
-remove = input()
-cables = 10
-while cables < 10:
-    cables = cables +1
+cables_to_remove = int(input())
 
-print(f"romoving cables")
+cables_removed = 0
+
+print()
+while cables_removed < cables_to_remove:
+    print("Removed cable.")
+    cables_removed = cables_removed + 1
+
