@@ -8,6 +8,8 @@ def search(file_path):
         for line in file:
             if line.startswith("Section"):
                 sections += line
+            else:
+                books += line
 
     print("Done!")
 
