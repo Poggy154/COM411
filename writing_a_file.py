@@ -13,4 +13,15 @@ def search(file_path):
 
     return f"{sections}\n\n{books}"
 
-def save(file_path)
+def save(file_path, data):
+    print("Saving...")
+    with open(file_path, "w") as file:
+        file.write(data)
+    print("Done!")
+
+def run():
+    data = search("books.txt")
+    save("exported_books.txt", data)
+
+if __name__ == "__main__":
+    run()
