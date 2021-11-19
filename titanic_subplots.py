@@ -41,11 +41,11 @@ def plot_age_vs_survival(ax, data):
             children['deceased'].append(age)
         elif (age < 65 and data['survived'][index]):
             adults ['survived'].append(age)
-        elif (age < 65 and not data['survived'][index])
+        elif (age < 65 and not data['survived'][index]):
             adults['deceased'].append(age)
-        elif (data['survived'][index])
+        elif (data['survived'][index]):
             elderly['survived'].append(age)
-        else
+        else:
             elderly['deceased'].append(age)
 
     labels = ['children', 'adults', 'elderly']
@@ -67,7 +67,7 @@ def plt_fare_vs_survival(ax, data):
         if (data['survived'][index]):
            survived.append(data['fare'][index])
         else:
-        deceased.append(data['fare'][index])
+           deceased.append(data['fare'][index])
 
     ax.scatter(range(len(survived)), survived, label='Survived')
     ax.scatter(range(len(deceased)), deceased, label='Deceased')
